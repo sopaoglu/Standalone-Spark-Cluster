@@ -46,7 +46,8 @@ wjh0x6n5gd...   spark2    Ready   Active
 
 3kq85vylsd...   spark3    Ready   Active
 
-We can install Apache Spark on our cluster, to do this you must download docker-compose.yml file on your Manager Node. After downloading the file, run following command on directory which exists docker-compose.yml
+We can install Apache Spark on our cluster, to do this you must download docker-compose.yml file on your Manager Node. 
+After downloading the file, run following command on directory which exists docker-compose.yml
 
 sudo docker stack deploy --compose-file=docker-compose.yml spark
 
