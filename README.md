@@ -36,7 +36,7 @@ docker node ls
 
 You see list of machines which exists on your cluster
 
-ID              HOSTNAME  STATUS  AVAILABILITY MANAGER STATUS
+ID\tHOSTNAME  STATUS  AVAILABILITY MANAGER STATUS
 
 6v4ddxl3uj... * spark     Ready   Active       Leader
 
