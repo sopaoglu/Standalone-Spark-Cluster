@@ -1,1 +1,1 @@
-To create a standalone spark cluster, use steps in Installation Guideline
+To create a standalone spark cluster by using docker swarm, use steps in Installation Guideline
