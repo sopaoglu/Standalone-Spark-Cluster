@@ -1,6 +1,6 @@
 The first step is to install docker on your machines.
 
-We assume that you have 4 nodes clusters. 
+We assume that your cluster consists of 4 nodes
 
 IP Addresses of our machines are :
 Node 1: 192.168.100.100
