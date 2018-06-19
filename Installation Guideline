@@ -15,6 +15,13 @@ On Node 1, run following command:
 
 docker swarm init --advertise-addr=192.168.100.100
 
+We can install Apache Spark on our cluster, to do this you must download docker-compose.yml file on your Manager Node(Node 1). 
+After downloading the file, run following command on directory which exists docker-compose.yml on Manager Node(Node 1)
+
+On Node 1, run following command:
+
+sudo docker stack deploy --compose-file=docker-compose.yml spark
+
 Now, we can add other nodes on our clusters. To do that, 
 
 Run following command on Node 1
@@ -46,12 +53,8 @@ wjh0x6n5gd...   spark2    Ready   Active
 
 3kq85vylsd...   spark3    Ready   Active
 
-We can install Apache Spark on our cluster, to do this you must download docker-compose.yml file on your Manager Node(Node 1). 
-After downloading the file, run following command on directory which exists docker-compose.yml on Manager Node(Node 1)
 
-sudo docker stack deploy --compose-file=docker-compose.yml spark
-
-The command creates only 1 master and 1 worker nodes for Apache Spark. To increase the number of worker node on your cluster, run following command
+To increase the number of worker node on your cluster, run following command
 
 sudo docker service scale spark_worker=<number of workers>
 
