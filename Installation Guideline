@@ -59,4 +59,11 @@ To increase the number of worker node on your cluster, run following command
 sudo docker service scale spark_worker=<number of workers>
 
 
+--------------------------------------------------
+
+If you want to remove a node from cluster, fist of all connect the cluster which you want to remove and then run following command
+
+docker swarm leave
+
+
 
